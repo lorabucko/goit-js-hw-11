@@ -1,86 +1,50 @@
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-.form-wrapper {
-  padding: 60px 60px;
-}
-.feedback-form {
+.form {
   display: flex;
-  flex-direction: column;
-  width: 360px;
-}
-
-.feedback-form label {
-  display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 8px;
-  margin-bottom: 8px;
-
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  color: #2e2f42;
+  margin-top: 36px;
 }
 
-.feedback-form input,
-.feedback-form textarea {
-  width: 100%;
+.search-input {
+  width: 272px;
+  height: 40px;
   padding: 8px 16px;
-
   border: 1px solid #808080;
   border-radius: 4px;
   outline: transparent;
-
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
   color: #2e2f42;
-
   transition: border-color 250ms ease;
 }
 
-.feedback-form input {
-  height: 40px;
+.search-input::placeholder {
+  color: #808080;
 }
 
-.feedback-form textarea {
-  resize: none;
-  min-height: 80px;
-  margin-bottom: 16px;
-}
-
-.feedback-form input:hover,
-.feedback-form textarea:hover {
+.search-input:hover {
   border-color: #000000;
 }
 
-.feedback-form input:focus,
-.feedback-form textarea:focus {
-  border-color: #808080;
+.search-input:focus {
+  border-color: #4e75ff;
 }
 
-.feedback-form button {
-  min-width: 95px;
+.search-btn {
+  min-width: 91px;
   height: 40px;
   padding: 8px 16px;
-  align-self: flex-start;
-
   border: none;
   border-radius: 8px;
   background-color: #4e75ff;
-  cursor: pointer;
-
-  font-family: inherit;
-  font-size: 16px;
+  color: #ffffff;
+  font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  color: #ffffff;
-
+  cursor: pointer;
   transition: background-color 250ms ease;
 }
 
-.feedback-form button:hover,
-.feedback-form button:focus {
+.search-btn:hover,
+.search-btn:focus {
   background-color: #6c8cff;
 }
