@@ -58,7 +58,7 @@ export function createGallery(images) {
 }
 
 export function clearGallery() {
-  galleryEl.innerHTML = ' ';
+  galleryEl.innerHTML = '';
 }
 
 export function showLoader() {
